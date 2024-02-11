@@ -6,3 +6,6 @@ services:
       - MYSQL_ROOT_PASSWORD=sampleDBuser
     ports:
       - 3306:3306
+    volumes:
+    # 設定ファイル
+      - ./env/conf/my.cnf:/etc/my.cnf
