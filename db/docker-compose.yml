@@ -9,3 +9,5 @@ services:
     volumes:
     # 設定ファイル
       - ./env/conf/my.cnf:/etc/my.cnf
+    # データベースファイル
+      - ./env/data/:/docker-entrypoint-initdb.d/
